@@ -1,70 +1,69 @@
 body {
-  font-family: 'Georgia', serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #000;
-  background-color: #fff;
+  text-align: center;
 }
 
 .hero-text {
-  text-align: center;
-  margin-top: 40px;
+  background-color: white;
+  padding: 50px 0;
 }
 
 .hero-text h1 {
-  font-size: 100px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.banner {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.banner h2 {
-  font-size: 36px;
+  font-size: 120px;
   margin: 0;
   font-weight: bold;
-}
-
-.banner p {
-  margin: 10px 0 0;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .content {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.6;
+  background-color: black;
+  color: white;
+  padding: 40px 0;
 }
 
-.content h1 {
-  font-size: 48px;
-  margin: 10px 0;
+.content h2 {
+  font-size: 40px;
+  margin: 0;
 }
 
 .price {
-  color: #003399;
-  font-weight: bold;
+  font-size: 14px;
+  color: #cccccc;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
-a {
+footer {
+  background-color: white;
+  color: black;
+  padding: 40px 200px;
+  text-align: left;
+}
+
+footer a {
   color: #0077cc;
   text-decoration: none;
 }
 
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #333;
+footer a:hover {
+  text-decoration: none;
 }
 
-footer a {
-  margin-right: 10px;
+footer p {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer strong {
+  font-weight: bold;
+}
+
+footer::after {
+  content: "© 2019 Classic George Car Dealership";
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #333;
 }
