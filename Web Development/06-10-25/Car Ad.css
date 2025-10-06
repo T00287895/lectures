@@ -49,11 +49,6 @@ body {
   margin: 10px 0;
 }
 
-.content .highlight {
-  font-weight: bold;
-  font-size: 28px;
-}
-
 .price {
   color: #003399;
   font-weight: bold;
@@ -62,10 +57,6 @@ body {
 a {
   color: #0077cc;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 footer {
