@@ -48,3 +48,9 @@ span {
     color: darkblue;
 }
 
+nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
