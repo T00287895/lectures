@@ -1,0 +1,27 @@
+ftp ftp.funet.fi # anonymous/
+
+
+cd \ #(this will move you up to the root directory)
+md FTP_Stuff #(make a directory/folder called FTP_Stuff)
+cd FTP_Stuff
+binary #to change to a binary file type instead of the default ASCII file type
+get ttcp.tar.gz
+bye
+
+You can connect from:
+- browser
+- ftp client
+- cmd
+- File Explorer
+
+In Win 10 you need to map the remote site as a network drive. Open Windows Explorer
+and right click on the Network icon and choose Map Network drive.
+Select the link to “Connect to a Web site ....”
+Enter the path to the FTP site.
+
+
+Configuring a FTP Server:
+- Install Filezilla FTP Server.
+- localhost, port 14148
+- Configure - Users - Read permission
+- Configure - Users - Add user

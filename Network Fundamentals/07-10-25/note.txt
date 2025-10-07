@@ -1,2 +1,18 @@
 arp -a
 ipconfig
+
+
+The Three-Way Handshake:
+- SYN - (Synchronize) Initiates a connection
+- FIN - (Final) Cleanly terminates a connection
+- ACK - Acknowledges received data
+
+Sequence and Acknowledgment Numbers
+The client on either side of a TCP session maintains a 32-bit sequence number it uses to keep track of
+how much data it has sent. This sequence number is included on each transmitted packet, and
+acknowledged by the opposite host as an acknowledgment number to inform the sending host that the
+transmitted data was received successfully
+
+
+When a host initiates a TCP session, its initial sequence number is effectively random; it may be any
+value between 0 and 4,294,967,295, inclusive
