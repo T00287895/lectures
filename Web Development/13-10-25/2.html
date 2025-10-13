@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            border: 1px solid black;
+        }
+        .timestamp {
+            color: #ffffff;
+            background: #0d00ff;
+        }
+        .day {
+            background: #c4c4c4;
+        }
+        .notify {
+            text-align: center;
+            background: #c4c4c4;
+        }
+        .txt-center {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>9.00</td>
+                <td>French</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Irish</td>
+                <td>Irish</td>
+            </tr>
+            <tr>
+                <td>10.00</td>
+                <td>Geog</td>
+                <td>History</td>
+                <td>Pe</td>
+                <td>Maths</td>
+                <td>Spanish</td>
+            </tr>
+            <tr>
+                <td>11.00</td>
+                <td>Science</td>
+                <td>Chemistry</td>
+                <td>Maths</td>
+                <td>Irish</td>
+                <td>Religion</td>
+            </tr>
+            <tr>
+                <td>12.00</td>
+                <td>Geog</td>
+                <td>History</td>
+                <td>Pe</td>
+                <td>Pe</td>
+                <td>Spanish</td>
+            </tr>
+
+        </thead>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>9.00</td>
+                <td>French</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Irish</td>
+                <td rowspan="4">Irish</td>
+            </tr>
+            <tr>
+                <td>10.00</td>
+                <td rowspan="2">Geog</td>
+                <td>History</td>
+                <td>Pe</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>11.00</td>
+                <td>Science</td>
+                <td colspan="2">Maths</td>
+            </tr>
+            <tr>
+                <td>12.00</td>
+                <td>Geog</td>
+                <td>History</td>
+                <td>Pe</td>
+                <td>Pe</td>
+            </tr>
+        </thead>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="day">Time</th>
+                <th class="day">Mon</th>
+                <th class="day">Tues</th>
+                <th class="day">Wed</th>
+                <th class="day">Thursday</th>
+                <th class="day">Friday</th>
+            </tr>
+            <tr>
+                <td class="timestamp">9.00</td>
+                <td>French</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Irish</td>
+                <td>Irish</td>
+            </tr>
+            <tr>
+                <td class="timestamp">10.00</td>
+                <td class="txt-align" rowspan="2">Geog</td>
+                <td>History</td>
+                <td class="txt-center" colspan="2">Pe</td>
+                <td>Spanish</td>
+            </tr>
+            <tr>
+                <td class="timestamp">11.00</td>
+                <td>Chemistry</td>
+                <td>Maths</td>
+                <td>Irish</td>
+                <td rowspan="2">Spanish</td>
+            </tr>
+            <tr>
+                <td class="timestamp">12.00</td>
+                <td>Geog</td>
+                <td>History</td>
+                <td class="txt-center" colspan="2">Pe</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="notify">Timetable subject to change</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
