@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spanning Columns and Rows</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            font-family: MolengoRegular, arial, helvetica, sans-serif;
+        }
+        .day {
+            background: #fc6;
+        }
+        .week {
+            background: #e0e0e0;
+        }
+        .caption {
+            font-weight: bold;
+            font-family: MolengoRegular, arial, helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption class="caption">Dundas</caption>
+        <thead>
+            <tr>
+                <th class="day" rowspan="2">Day</th>
+                <th class="day" colspan="2">Hours</th>
+            </tr>
+            <tr>
+                <th class="day">Open</th>
+                <th class="day">Close</th>
+            </tr>
+            <tr>
+                <th class="week">Mon-Thu</th>
+                <td>11am</td>
+                <td>11pm</td>
+            </tr>
+            <tr>
+                <th class="week">Fri-Sat</th>
+                <td>11am</td>
+                <td>Midnight</td>
+            </tr>
+            <tr>
+                <th class="week">Sun</th>
+                <td>Noon</td>
+                <td>11pm</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
