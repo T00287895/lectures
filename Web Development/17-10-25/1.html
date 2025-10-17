@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+
+
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+
+        h1, h2, h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        header, footer {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            background: #422100;
+            color: white;
+            padding: 1.5em;
+
+
+        }
+
+        header ul, header ul li, footer ul, footer ul li {
+            list-style: none;
+        }
+
+        header > nav > ul {
+            display: inline-flex;
+            gap: 0.5em;
+        }
+
+        header > nav > ul > li {
+            position: relative;
+        }
+
+        header > nav > ul > li:not(:last-child)::after {
+            content: "|";
+            padding-left: 0.5em;
+        }
+
+        header li a {
+            text-decoration: none;
+        }
+
+        main {
+            width: 1200px;
+            max-width: 100%;
+            margin: auto;
+            border: #422100 1px solid;
+            padding: 1.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            background: #faf8ee;
+        }
+
+        main section {
+            border: #422100 1px solid;
+            padding: 1.5em;
+        }
+
+        main section h2 {
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <h1>ALOFT LONDON EXCEL &trade;</h1>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li>
+                <a href="https://google.com" target="_blank">Reservations</a>
+            </li>
+            <li>
+                <a href="https://google.com" target="_blank">London Hotel Group</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section>
+        <h2>Facilities</h2>
+        <p>
+            Breeze into one of our 252 loft-like rooms, including 12 Savvy Suites boasting nifty views
+            over Royal Victoria Dock and 19 accessible rooms making accessible accommodation
+            in London easy breezy.
+        </p>
+        <p>
+            All of our rooms are tuned to you, featuring a host of useful amenities so that you can
+            customize your stay. You may also like to avail of our leisure facilities which are
+            available free of charge to all residents.
+        </p>
+        <ul>
+            <li>1 King or 2 Queen Rest and Relaxation Beds</li>
+            <li>42'' Flat Screen TV</li>
+            <li>Free High-Speed Internet Access</li>
+            <li>Iron & Ironing Board</li>
+            <li>Accessible Rooms available</li>
+            <li>
+                Leisure Center
+                <ul>
+                    <li>Gym</li>
+                    <li>25m swimming pool</li>
+                    <li>Spa area</li>
+                    <li>Outdoor hot tub</li>
+                    <li>Relaxation area</li>
+                    <li>Steam room</li>
+                </ul>
+            </li>
+            <li>Tennis court</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Reservations</h2>
+        <p>We're happy to take reservations up to a year in advance by phone, fax, or <a href="mailto:somee@mail.com">email</a>
+            .</p>
+        <p>Feel free to contact us with any queries about ALOFT LONDON EXCEL, or about planning your trip.
+            <a href="google.com" target="_blank">Read about reserving ALOFT LONDON EXCEL for a wedding or other special
+                event. (PDF)</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <address>
+        <ul>
+            <li>Phone: <a href="tel:+218555-5253">(218) 555-5253</a></li>
+            <li>Fax: (218) 555-0413</li>
+            <li>Email: <a href="mailto:lrbb@example.com">lrbb@example.com</a></li>
+        </ul>
+    </address>
+</footer>
+</body>
+</html>
