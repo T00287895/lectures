@@ -26,6 +26,11 @@ except ValueError:
     print(f"Price must be a number!")
     pass
 
+# int = 2.5/
+# except valueError
+# int = 2
+# int = n/a
+
 if price < 120 and price > 0.0:
     discount = (price / 100) * 8
 elif price > 120 and price > 0.0:
