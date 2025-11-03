@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обтекание изображения справа — семантичный пример</title>
+    <style>
+        main {
+            max-width: 800px;
+            margin: auto;
+            font-family: system-ui, sans-serif;
+            line-height: 1.6;
+        }
+
+        article {
+            display: block;
+            margin: 2rem 0;
+        }
+
+        figure {
+            float: right; /* Картинка плавает справа */
+            margin: 0 0 1rem 1rem; /* Отступ от текста */
+            max-width: 250px; /* Ограничение ширины */
+        }
+
+        picture,
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.3em;
+        }
+
+        /* Чтобы текст не прилипал к картинке при узком экране */
+        @media (max-width: 600px) {
+            figure {
+                float: none;
+                margin: 1rem auto;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <article>
+        <header>
+            <h1>История Lorem Ipsum</h1>
+        </header>
+
+        <figure>
+            <picture>
+                <!-- Современный формат (WebP) -->
+                <source srcset="https://b1cbfdd5a80ee393cc136f7d8eccaede4cdefa92.mdnplay.dev/en-US/docs/Web/HTML/Reference/Elements/figure/favicon-192x192.png"
+                        type="image/webp">
+                <!-- Фолбэк на PNG -->
+                <img alt="Иллюстрация страницы с латинским текстом Lorem Ipsum"
+                     src="https://b1cbfdd5a80ee393cc136f7d8eccaede4cdefa92.mdnplay.dev/en-US/docs/Web/HTML/Reference/Elements/figure/favicon-192x192.png">
+            </picture>
+            <figcaption>Историческая типографская страница с Lorem Ipsum</figcaption>
+        </figure>
+
+        <p>
+            <strong>Lorem Ipsum</strong> — это текст-заполнитель, часто используемый в полиграфии и веб-дизайне.
+            Его происхождение восходит к произведению Цицерона «О пределах добра и зла», написанному в 45 году до н. э.
+            С XVI века Lorem Ipsum применяется как стандартный текст-заглушка для демонстрации шрифтов и макетов.
+        </p>
+
+        <p>
+            Современные версии Lorem Ipsum берут начало в публикациях середины XX века.
+            Он используется дизайнерами, чтобы показать, как будет выглядеть наполнение сайта без реального контента.
+            При этом структура предложений сохраняет видимость осмысленного латинского текста.
+        </p>
+
+        <footer>
+            <p><small>Источник: Cicero, <em>De Finibus Bonorum et Malorum</em>, 45 г. до н. э.</small></p>
+        </footer>
+    </article>
+</main>
+
+</body>
+</html>
