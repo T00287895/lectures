@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CatConnect | Likes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="title-row">
+        <span class="title-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 20.3 5.2 13.6a4.2 4.2 0 0 1 0-6c1.6-1.6 4.1-1.6 5.7 0l1.1 1.1 1.1-1.1c1.6-1.6 4.1-1.6 5.7 0a4.2 4.2 0 0 1 0 6Z" />
+          </svg>
+        </span>
+        <h1>Likes</h1>
+      </div>
+      <p>Here you can see everyone who liked your profile. Like them back to create a match and start chatting.</p>
+    </header>
+
+    <main>
+      <section class="card likes-card">
+        <article class="liked-profile">
+          <figure>
+            <img src="img/user.png" alt="Portrait of Daniel, a cat in a cozy scarf and glasses.">
+            <span class="profile-name">Daniel<span>28 y.o.</span></span>
+            <span class="badge">84%</span>
+          </figure>
+          <div class="liked-actions">
+            <button class="like" type="button" aria-label="Like Daniel back">
+              <img src="img/like-btn.png" alt="">
+            </button>
+            <button class="skip" type="button" aria-label="Dismiss Daniel">
+              <img src="img/dislike-btn.png" alt="">
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <nav class="bottom-nav" aria-label="Primary navigation">
+        <a class="nav-item match" href="match.html">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.5c0 3-2.8 4.5-2.8 7.2 0 2 1.6 3.6 3.6 3.6s3.6-1.6 3.6-3.6c0-2.7-2.6-4.2-2.6-7.2" />
+              <path d="M12 22.5c-3.6 0-6.4-2.7-6.4-6 0-2.3 1.3-3.9 3-5.5" />
+              <path d="M10.8 14.4c1.4 2.3.8 4.6-.5 6.3" />
+            </svg>
+          </span>
+          <span class="label">Match</span>
+        </a>
+        <a class="nav-item date" href="date.html">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 3h10v2c0 4.2-3 7.6-5 8.4-2-0.8-5-4.2-5-8.4V3Z" />
+              <path d="M12 13.4V18" />
+              <path d="M9 18h6" />
+            </svg>
+          </span>
+          <span class="label">Date</span>
+        </a>
+        <a class="nav-item likes active" href="like.html">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 20.3 5.2 13.6a4.2 4.2 0 0 1 0-6c1.6-1.6 4.1-1.6 5.7 0l1.1 1.1 1.1-1.1c1.6-1.6 4.1-1.6 5.7 0a4.2 4.2 0 0 1 0 6Z" />
+            </svg>
+          </span>
+          <span class="label">Likes</span>
+        </a>
+        <a class="nav-item chat" href="chat.html">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+            </svg>
+          </span>
+          <span class="label">Chat</span>
+        </a>
+        <a class="nav-item profile" href="profile.html">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5.5 19.5a6.5 6.5 0 0 1 13 0" />
+            </svg>
+          </span>
+          <span class="label">Profile</span>
+        </a>
+      </nav>
+      <div class="utility-links">
+        <a href="#top">Back to top</a>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
