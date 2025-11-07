@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>CatConnect | Profile</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Fine-tune your CatConnect presence with a polished bio, photos, and preferences." name="description">
+    <meta content="CatConnect profile, edit cat dating profile, feline matchmaking" name="keywords">
+    <meta content="Vitalii Stekolshchykov" name="author">
+    <meta content="CatConnect © 2024" name="copyright">
     <link href="styles.css" rel="stylesheet">
 </head>
-<body id="top">
-<div class="page-wrapper">
+<body>
+<div class="center-stage">
+<div id="top"></div>
+<div class="page-wrapper profile-page">
 
     <header class="page-header">
         <div class="title-row">
@@ -23,6 +29,14 @@
                     you.</p>
             </div>
         </div>
+        <nav aria-label="Global navigation" class="top-nav">
+            <a href="match.html">Match</a>
+            <a href="index.html">Date</a>
+            <a href="like.html">Likes</a>
+            <a href="chat.html">Chat</a>
+            <a class="active" href="profile.html">Profile</a>
+            <a href="sitemap.html">Sitemap</a>
+        </nav>
     </header>
 
     <main>
@@ -30,21 +44,144 @@
             <h2>Profile builder coming soon</h2>
             <p>We are crafting tools to let you customise your CatConnect profile with ease. Check back shortly!</p>
         </section>
+        <section aria-label="Profile preferences overview" class="card profile-preferences">
+            <h2>Saved preferences</h2>
+            <table>
+                <caption>Summary of Ketty’s current dating profile settings</caption>
+                <colgroup>
+                    <col class="col-field">
+                    <col class="col-value">
+                    <col class="col-visibility">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col">Field</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Visibility</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Location</th>
+                    <td>Vancouver, BC</td>
+                    <td>Matches nearby</td>
+                </tr>
+                <tr>
+                    <th scope="row">Availability</th>
+                    <td>Weeknights &amp; Sundays</td>
+                    <td>Matches only</td>
+                </tr>
+                <tr>
+                    <th scope="row">Interests</th>
+                    <td>Indie cafés, sci-fi, rainy walks</td>
+                    <td>Public</td>
+                </tr>
+                <tr>
+                    <th scope="row">Preferred date type</th>
+                    <td>Casual coffee or bookstore stroll</td>
+                    <td>Matches only</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th scope="row">Last updated</th>
+                    <td colspan="2">05 Nov 2024 · Auto-save enabled</td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section aria-label="Profile feedback form" class="card profile-form-card">
+            <h2>Update your profile</h2>
+            <form action="mailto:support@catconnect.example?subject=Profile%20Update" enctype="text/plain" method="post">
+                <fieldset>
+                    <legend>Contact info</legend>
+                    <label>
+                        Display name
+                        <input name="display_name" placeholder="Ketty" required type="text">
+                    </label>
+                    <label>
+                        Email
+                        <input name="email" placeholder="ketty@example.com" required type="email">
+                    </label>
+                    <label>
+                        Phone
+                        <input name="phone" placeholder="+1 604 555 1234" type="tel">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Match preferences</legend>
+                    <label>
+                        City
+                        <select name="city" required>
+                            <option value="">Choose a city</option>
+                            <option>Vancouver</option>
+                            <option>Toronto</option>
+                            <option>Seattle</option>
+                        </select>
+                    </label>
+                    <label>
+                        Vibe intensity
+                        <input max="10" min="1" name="vibe" step="1" type="range" value="6">
+                    </label>
+                    <div class="input-group">
+                        <span>Preferred date type</span>
+                        <label><input checked name="date_type" type="radio" value="coffee"> Coffee</label>
+                        <label><input name="date_type" type="radio" value="museum"> Museum</label>
+                        <label><input name="date_type" type="radio" value="outdoor"> Outdoor walk</label>
+                    </div>
+                    <div class="input-group">
+                        <span>Interests to highlight</span>
+                        <label><input checked name="interests" type="checkbox" value="books"> Bookstores</label>
+                        <label><input name="interests" type="checkbox" value="cafes"> Indie cafés</label>
+                        <label><input name="interests" type="checkbox" value="hikes"> Scenic hikes</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Availability &amp; media</legend>
+                    <label>
+                        First available date
+                        <input name="date_available" type="date">
+                    </label>
+                    <label>
+                        Preferred time
+                        <input name="preferred_time" type="time">
+                    </label>
+                    <label>
+                        Upload new photo
+                        <input accept="image/*" name="profile_photo" type="file">
+                    </label>
+                </fieldset>
+                <label>
+                    Short bio update
+                    <textarea name="bio" placeholder="Share a quick hello…" rows="4"></textarea>
+                </label>
+                <input name="app_version" type="hidden" value="CatConnect-v1.0">
+                <div class="form-actions">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Send update</button>
+                </div>
+            </form>
+        </section>
     </main>
+    <nav aria-label="Utility links" class="utility-links">
+        <a href="index.html">Home</a>
+        <a href="https://www.bestfriends.org/our-work/cats" rel="noopener noreferrer" target="_blank">Best Friends resources</a>
+        <a href="mailto:support@catconnect.example?subject=CatConnect%20Profile%20Help">Email support</a>
+        <a href="#top">Back to top</a>
+    </nav>
 
     <footer class="page-footer">
         <nav aria-label="Primary navigation" class="bottom-nav">
             <a class="nav-item match" href="match.html">
-          <span aria-hidden="true" class="icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2.5c0 3-2.8 4.5-2.8 7.2 0 2 1.6 3.6 3.6 3.6s3.6-1.6 3.6-3.6c0-2.7-2.6-4.2-2.6-7.2"/>
-              <path d="M12 22.5c-3.6 0-6.4-2.7-6.4-6 0-2.3 1.3-3.9 3-5.5"/>
-              <path d="M10.8 14.4c1.4 2.3.8 4.6-.5 6.3"/>
-            </svg>
-          </span>
+                  <span aria-hidden="true" class="icon">
+                    <svg fill="#000000" version="1.1" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                        <title>match</title>
+                        <path d="M29.112 6.859c0.037 0.862-0.078 1.716-0.385 2.542-0.647-2.474-1.916-5.915-5.674-7.529-0.99-0.346-2.088-0.594-3.298-0.725h-0c2.543 3.101 1.725 5.41 0.333 7.658 0.050-2.678-2.321-3.627-5.195-2.75 4.458 0.009 3.963 3.354 2.949 6.308-0.524 1.008-0.892 2.074-0.892 3.252 0 1.32 0.42 2.404 1.158 3.24l-16.999 10.389v1.494h3.743l16.456-10.245c0.332 0.118 0.69 0.183 1.063 0.183 1.756 0 3.179-1.427 3.179-3.188s-1.423-3.188-3.179-3.188-3.179 1.427-3.179 3.188c0 0.227 0.024 0.448 0.069 0.662l-0.604 0.369c-0.14-0.587-0.147-1.241 0.007-1.957 0.635-2.962 3.252-4.512 4.409-6.997 0.599 1.103 1.514 1.892 2.405 1.895 1.213 0.004 1.881-1.409 1.567-3.171 2.583 3.718 1.768 9.478-0.729 12.099 4.105-1.874 5.571-8.541 2.797-13.528z"/>
+                    </svg>
+                  </span>
                 <span class="label">Match</span>
             </a>
-            <a class="nav-item date" href="date.html">
+            <a class="nav-item date" href="index.html">
           <span aria-hidden="true" class="icon">
             <svg viewBox="0 0 24 24">
               <path d="M7 3h10v2c0 4.2-3 7.6-5 8.4-2-0.8-5-4.2-5-8.4V3Z"/>
@@ -82,6 +219,7 @@
         </nav>
 
     </footer>
+</div>
 </div>
 </body>
 </html>

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CatConnect | Likes</title>
+    <title>CatConnect | Sitemap</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="See who has liked your CatConnect profile and return the favor to spark new matches." name="description">
-    <meta content="CatConnect likes, cat dating likes, match queue" name="keywords">
+    <meta content="Browse every CatConnect screen, resource, and support link from one sitemap." name="description">
+    <meta content="CatConnect sitemap, navigation, site map" name="keywords">
     <meta content="Vitalii Stekolshchykov" name="author">
     <meta content="CatConnect © 2024" name="copyright">
     <link href="styles.css" rel="stylesheet">
@@ -13,54 +13,86 @@
 <body>
 <div class="center-stage">
 <div id="top"></div>
-<div class="page-wrapper">
-
+<div class="page-wrapper sitemap-page">
     <header class="page-header">
         <div class="title-row">
                <span aria-hidden="true" class="title-icon">
                   <svg viewBox="0 0 24 24">
-                     <path d="M12 20.3 5.2 13.6a4.2 4.2 0 0 1 0-6c1.6-1.6 4.1-1.6 5.7 0l1.1 1.1 1.1-1.1c1.6-1.6 4.1-1.6 5.7 0a4.2 4.2 0 0 1 0 6Z"/>
+                      <path d="M4 6h16M4 12h16M4 18h16"/>
                   </svg>
                </span>
             <div>
-                <h1>Likes</h1>
-                <p>
-                    Here you can see everyone who liked your profile. Like them back to create a match and start
-                    chatting.
-                </p>
+                <h1>Site map</h1>
+                <p>Quick links to every CatConnect prototype page, utility section, and resource.</p>
             </div>
         </div>
+        <nav aria-label="Quick navigation" class="top-nav">
+            <a href="match.html">Match</a>
+            <a href="index.html">Date</a>
+            <a href="like.html">Likes</a>
+            <a href="chat.html">Chat</a>
+            <a href="profile.html">Profile</a>
+        </nav>
     </header>
-
-    <main class="content-grid">
-        <section class="card likes-card float-col">
-            <article class="liked-profile">
-                <figure>
-                    <img alt="Portrait of Daniel, a cat in a cozy scarf and glasses." src="assets/images/user.png">
-                    <span class="profile-name">Daniel<span>28 y.o.</span></span>
-                    <span class="badge">84%</span>
-                    <figcaption class="sr-only">Daniel, 28-year-old cat wearing a cozy scarf, liked your profile.</figcaption>
-                </figure>
-                <div class="liked-actions">
-                    <button aria-label="Like Daniel back" class="like" type="button">
-                        <img alt="" src="assets/images/like-btn.png">
-                    </button>
-                    <button aria-label="Dismiss Daniel" class="skip" type="button">
-                        <img alt="" src="assets/images/dislike-btn.png">
-                    </button>
-                </div>
-            </article>
+    <main class="content-grid sitemap-content">
+        <section class="card invitation-card" id="pages">
+            <h2>Primary screens</h2>
+            <ul>
+                <li><a href="match.html">Match – swipe and discover new connections</a></li>
+                <li><a href="like.html">Likes – review profiles that liked you</a></li>
+                <li><a href="chat.html">Chat – continue conversations with your matches</a></li>
+                <li><a href="index.html">Date – read invitations and RSVP</a></li>
+                <li><a href="profile.html">Profile – update preferences, tables, and forms</a></li>
+            </ul>
+        </section>
+        <section class="card date-resources" id="resources">
+            <h2>Helpful resources</h2>
+            <ul>
+                <li><a href="https://www.catcafesd.com/" rel="noopener noreferrer" target="_blank">Café Luna details</a></li>
+                <li><a href="https://www.aspca.org/pet-care/cat-care/general-cat-care" rel="noopener noreferrer" target="_blank">ASPCA cat-care tips</a></li>
+                <li><a href="https://moderncat.com/" rel="noopener noreferrer" target="_blank">Modern Cat magazine</a></li>
+            </ul>
+        </section>
+        <section class="card profile-preferences" id="support">
+            <h2>Support &amp; contacts</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col">Area</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Notes</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Matchmaking</th>
+                    <td><a href="mailto:support@catconnect.example?subject=Match%20Question">support@catconnect.example</a></td>
+                    <td>Questions about swiping, compatibility, or dating tips.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Profiles</th>
+                    <td><a href="mailto:support@catconnect.example?subject=Profile%20Question">support@catconnect.example</a></td>
+                    <td>Send profile updates, photo requests, or preference tweaks.</td>
+                </tr>
+                <tr>
+                    <th scope="row">General help</th>
+                    <td><a href="mailto:support@catconnect.example?subject=General%20Support">support@catconnect.example</a></td>
+                    <td  >Available daily 9am–6pm PST.</td>
+                </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <nav aria-label="Utility links" class="utility-links">
         <a href="index.html">Home</a>
         <a href="#top">Back to top</a>
     </nav>
+
     <footer class="page-footer">
         <nav aria-label="Primary navigation" class="bottom-nav">
             <a class="nav-item match" href="match.html">
                   <span aria-hidden="true" class="icon">
-               <svg fill="#000000" version="1.1" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                <svg fill="#000000" version="1.1" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
                         <title>match</title>
                         <path d="M29.112 6.859c0.037 0.862-0.078 1.716-0.385 2.542-0.647-2.474-1.916-5.915-5.674-7.529-0.99-0.346-2.088-0.594-3.298-0.725h-0c2.543 3.101 1.725 5.41 0.333 7.658 0.050-2.678-2.321-3.627-5.195-2.75 4.458 0.009 3.963 3.354 2.949 6.308-0.524 1.008-0.892 2.074-0.892 3.252 0 1.32 0.42 2.404 1.158 3.24l-16.999 10.389v1.494h3.743l16.456-10.245c0.332 0.118 0.69 0.183 1.063 0.183 1.756 0 3.179-1.427 3.179-3.188s-1.423-3.188-3.179-3.188-3.179 1.427-3.179 3.188c0 0.227 0.024 0.448 0.069 0.662l-0.604 0.369c-0.14-0.587-0.147-1.241 0.007-1.957 0.635-2.962 3.252-4.512 4.409-6.997 0.599 1.103 1.514 1.892 2.405 1.895 1.213 0.004 1.881-1.409 1.567-3.171 2.583 3.718 1.768 9.478-0.729 12.099 4.105-1.874 5.571-8.541 2.797-13.528z"/>
                     </svg>
@@ -77,7 +109,7 @@
                   </span>
                 <span class="label">Date</span>
             </a>
-            <a class="nav-item likes active" href="like.html">
+            <a class="nav-item likes" href="like.html">
                   <span aria-hidden="true" class="icon">
                      <svg viewBox="0 0 24 24">
                         <path d="M12 20.3 5.2 13.6a4.2 4.2 0 0 1 0-6c1.6-1.6 4.1-1.6 5.7 0l1.1 1.1 1.1-1.1c1.6-1.6 4.1-1.6 5.7 0a4.2 4.2 0 0 1 0 6Z"/>
@@ -103,6 +135,7 @@
                 <span class="label">Profile</span>
             </a>
         </nav>
+
     </footer>
 </div>
 </div>
