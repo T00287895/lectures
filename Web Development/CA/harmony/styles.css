@@ -13,7 +13,7 @@
     --nav-icon: #938faf;
     --nav-height: 92px;
     --page-width: 360px;
-    --page-max-height: 800px;
+    
     font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -47,6 +47,10 @@ html, body {
     background: #f6f4fb;
 }
 
+.center-stage.stretch {
+    align-items: stretch;
+}
+
 body {
     margin: 0;
     background: transparent;
@@ -66,9 +70,9 @@ a:hover {
 }
 
 .page-wrapper {
-    width: min(100%, var(--page-width));
-    height: min(100vh, var(--page-max-height));
-    overflow-y: auto;
+    width: 100%;
+    min-height: 100vh;
+    
     display: flex;
     flex-direction: column;
     background: #ffffff;
@@ -305,7 +309,6 @@ main {
     overflow: hidden;
     box-shadow: none;
     min-height: 100%;
-    background: red;
 }
 
 .match-hero img {
