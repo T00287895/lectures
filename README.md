@@ -1,5 +1,9 @@
 # Text
 
+## Digram
+
+- [Math style](https://github.com/T00287895/lectures/blob/main/Computer%20Architecture/06-11-25/style%20template.pdsprj)
+
 ## AI
 
 ### Detect
@@ -18,3 +22,7 @@
 ## IDE Online
 
 - https://github.com/codespaces
+
+# Info
+
+- [Modules For Bachelor of Science in Computing](https://www.mtu.ie/courses/mt703/#modules)
