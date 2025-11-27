@@ -26,3 +26,10 @@
 # Info
 
 - [Modules For Bachelor of Science in Computing](https://www.mtu.ie/courses/mt703/#modules)
+- Report structure template:
+    - Title
+    - TOC
+    - Introduction
+    - Main section 
+    - Conclusion
+    - References
