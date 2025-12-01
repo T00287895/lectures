@@ -25,6 +25,7 @@
 
 # Info
 
+- CA results: MyBam -> [module] -> Components
 - [Modules For Bachelor of Science in Computing](https://www.mtu.ie/courses/mt703/#modules)
 - Report structure template:
     - Title
