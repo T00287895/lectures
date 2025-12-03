@@ -12,6 +12,7 @@
 - https://www.getmerlin.in/ru/ai-detection
 - https://quillbot.com/ai-content-detector
 - https://app.gptzero.me/?type=OAuth-success#
+- https://www.zerogpt.com/ 
 
 ### Fix
 
