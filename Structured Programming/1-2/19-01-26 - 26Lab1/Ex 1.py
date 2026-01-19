@@ -1,0 +1,1 @@
+print('"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows away your whole leg." \n\n            -Bjarne Stroustrup')
