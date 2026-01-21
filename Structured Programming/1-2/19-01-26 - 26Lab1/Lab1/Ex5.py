@@ -28,8 +28,5 @@ elif bmi >= 30:
 
 
 
-
-
-
 print(f"Your BMI is {bmi:.2f} so you are {status}")
 
