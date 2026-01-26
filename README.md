@@ -114,3 +114,6 @@
 - [Student Handbook - Section B](https://www.mtu.ie) (Rights & Responsibilities)
 - [Academic Calendar](https://www.mtu.ie)
 - [Examinations Office](https://www.mtu.ie)
+
+
+https://www.mtu.ie/mtu-academic-calendar/
