@@ -7,7 +7,7 @@ def numberOfDaysIn():
     if month == 2:
         days = 28
     elif month % 2 != 0:
-        days = 32
+        days = 31
     return days
 
 while True:
