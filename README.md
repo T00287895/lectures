@@ -94,13 +94,6 @@
 - **Personal circumstances**: Notify class tutor or HOD
 - **Exam-related issues**: Contact examinations office within 3 days
 
-## Key Contacts
-
-| Role | Contact |
-|------|---------|
-| Head of Department | Paul Collins (066 7191876) |
-| Department Administrator | 066 7191659 |
-| Email | computingkerry@mtu.ie |
 
 ## Support Services
 
